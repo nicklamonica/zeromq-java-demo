@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+wrapper {
+    gradleVersion = '6.3'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.zeromq/jeromq
+    compile group: 'org.zeromq', name: 'jeromq', version: '0.5.2'
+
+}
